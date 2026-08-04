@@ -1,0 +1,7 @@
+# Prints increasing altitude unitl while condition is no longer met
+
+altitude = 0
+
+while altitude < 50:
+    print(altitude)
+    altitude +=5
