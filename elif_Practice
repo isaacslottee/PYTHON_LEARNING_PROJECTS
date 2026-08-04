@@ -1,0 +1,10 @@
+# Uses elif to add multiple peramaters to comparison
+
+temperature = 65
+
+if temperature >= 80:
+    print("HOT")
+elif temperature >= 60:
+    print("WARM")
+else:
+    print("COLD")
