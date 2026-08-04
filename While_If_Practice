@@ -1,0 +1,14 @@
+# Combines while and if to simulate increasing altitude and decreasing battery
+
+altitude = 0
+battery = 100
+
+while altitude < 50:
+    altitude += 5
+    battery -= 3
+
+    print("Altitude: ", altitude, " Battery: ", battery)
+
+    if battery < 25:
+
+        print("Warning: Low Battery!")
