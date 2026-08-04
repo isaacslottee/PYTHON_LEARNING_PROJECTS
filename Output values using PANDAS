@@ -1,0 +1,25 @@
+# Orgainzes input values using PANDAS before outputting specific values
+
+import pandas as pd
+
+flight = {
+    "time": [0, 1, 2, 3, 4, 5],
+    "altitude": [0, 8, 18, 29, 35, 22],
+    "velocity": [0, 50, 112, 290, 310, 410]
+
+
+}
+
+df = pd.DataFrame(flight)
+
+print(df)
+print(df["altitude"].max())
+print(df["velocity"].mean())
+print(df["altitude"].min())
+
+if df["altitude"].max() > 30:
+    print("CELING REACHED")
+
+high = df[df["altitude"] > 20]
+
+print(high)
