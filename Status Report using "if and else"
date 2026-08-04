@@ -1,0 +1,18 @@
+# outputs warnings if input values are outside of set ranges
+
+def report_altutude(altutude):
+    if altutude > 30:
+        print("High altutude")
+    else:
+        print("Normal Altutude")
+
+report_altutude(50)
+
+def tempgood(temp):
+    if temp > 50:
+        print("PANIC")
+    elif temp < 50:
+        print("no panic")
+
+tempgood(60)
+tempgood(40)
