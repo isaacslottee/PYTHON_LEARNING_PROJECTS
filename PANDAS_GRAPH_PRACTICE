@@ -1,0 +1,32 @@
+# Creates a graph using PANDAS
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+flight = {
+      "Time":[0,1,2,3,4,5,6,7],
+      "Altitude":[0,5,14,24,36,40,32,12],
+      "Velocity":[0,5,9,10,12,4,-9,-18]
+}
+
+df = pd.DataFrame(flight)
+
+df.to_csv("flight_log.csv", index=False)
+
+flight_data = pd.read_csv("flight_log.csv")
+
+print(flight_data)
+
+plt.plot(flight_data["Time"], flight_data["Altitude"], flight_data["Velocity"])
+
+plt.title("Drome Test Flight")
+plt.xlabel("Time (seconds)")
+plt.ylabel("Altitude (meteres)")
+
+plt.show()
+
+print(flight_data["Altitude"].max())
+
+peak_row = flight_data.loc[flight_data["Altitude"].idxmax()]
+
+print(peak_row)
