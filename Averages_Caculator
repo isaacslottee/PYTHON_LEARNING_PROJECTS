@@ -1,0 +1,10 @@
+#generates averages of manualy imput values
+
+def altitudes_average(altitudes):
+    return sum(altitudes) / len(altitudes)
+
+altitudes = [ 4, 6, 8, 10, 44]
+
+answer = altitudes_average(altitudes)
+
+print(answer)
