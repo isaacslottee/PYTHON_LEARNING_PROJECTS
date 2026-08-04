@@ -1,0 +1,8 @@
+# Solves for the square of manually input values
+
+def square(number):
+    return number * number
+
+answer = square(5)
+
+print(answer)
