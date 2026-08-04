@@ -1,0 +1,12 @@
+# Uses multiple elif statements to create comparison scale
+
+Battery = 51
+
+if Battery >= 75:
+    print("Battery Full")
+elif Battery >= 51:
+    print("Battery Good")
+elif Battery >= 25:
+    print("Battery Low")
+else:
+    print("Battery Dead")
