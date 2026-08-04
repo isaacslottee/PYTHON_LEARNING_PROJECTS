@@ -1,0 +1,9 @@
+# Prints and labels multiple input values
+
+altitude = [0, 5,  15, 28,  35, 30]
+time = [0, 1, 2, 3, 4, 5]
+temp = [30, 28, 25, 21, 18, 15]
+for i in range(len(time)):
+    print("Time:", time[i], " Altitude: ", altitude[i], "temperature: ", temp[i])
+
+print("Highest Altitude: ", max(altitude), " meteres.")
