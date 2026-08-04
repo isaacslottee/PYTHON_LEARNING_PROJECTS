@@ -1,0 +1,14 @@
+# organizes string data into a dictonary for later usage
+
+plane = {
+    "model": "737 MAX",
+    "altitude": 41000,
+    "speed": 490
+}
+
+print(plane["model"])
+print(plane["altitude"])
+plane["altitude"] = 42000
+print(plane["altitude"])
+print(" ")
+print(plane)
