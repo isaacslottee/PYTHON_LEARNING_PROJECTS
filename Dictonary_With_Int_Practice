@@ -1,0 +1,11 @@
+#Dictonary Practice combining multiple data types
+aircraft = {
+    "model": "747-8F",
+    "airline": "Atlas Air",
+    "altitude": 38000,
+    "speed": 520
+}
+print(aircraft["airline"])
+aircraft["altitude"] = 40000
+print(" ")
+print(aircraft)
