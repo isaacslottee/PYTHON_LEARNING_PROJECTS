@@ -1,0 +1,10 @@
+# Caculates max value from manually input valus
+
+def highest_altitude(altitudes):
+    return max(altitudes)
+
+altitudes = [2, 5, 6, 8, 4]
+
+answer = highest_altitude(altitudes)
+
+print(answer)
