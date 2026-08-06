@@ -1,0 +1,11 @@
+#Uses try and except to avoid error when peramtrers are unavailable
+
+plane = {
+    "model": "747-8F",
+    "speed": 520
+}
+
+try:
+    print(plane["Altitude"])
+except:
+    print("Altitude data unavailable")
