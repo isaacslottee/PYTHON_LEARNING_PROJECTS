@@ -1,0 +1,9 @@
+coordinates = (61.1742, -149.9985)
+
+print(coordinates[0])
+print(coordinates[1])
+
+airport = ("ANC", "TED STEVENS", 61.1743, -149.9985)
+
+print(airport[1])
+print(airport[3])
