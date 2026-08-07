@@ -1,0 +1,19 @@
+#Utalizes list comprehension for practice
+
+numbers = [1,2,3,4,5]
+
+doubled = [number * 2 for number in numbers]
+
+print(doubled)
+
+flight_altitudes = [12000, 28000, 31000, 35000, 41000, 39000, 18000]
+
+high_altitudes = [altitude for altitude in flight_altitudes if altitude >= 30000]
+
+altitudes_km = [altitude * 0.0003048 for altitude in high_altitudes ]
+
+print(altitudes_km)
+
+cruise_status = ["Cruise" for altitudes in high_altitudes]
+
+print(cruise_status)
